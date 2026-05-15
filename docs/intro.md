@@ -33,3 +33,10 @@ It is built for teams that use AI coding tools and want database context without
 3. Add your local database connection profiles.
 4. Register the MCP server in your client.
 5. Ask your client to run `health_check`, `list_connections`, and read-only queries.
+
+## Included Client Assets
+
+- `.mcp.json` standard MCP server template
+- `.cursor/mcp.json` Cursor MCP template
+- `.codex-plugin/plugin.json` Codex local plugin manifest
+- `skills/local-db-mcp/SKILL.md` Codex usage guidance for safe database inspection

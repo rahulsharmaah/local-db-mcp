@@ -16,10 +16,10 @@ It is designed for teams that need one consistent way to inspect PostgreSQL, MyS
 
 ## Quick Start
 
-Install the server in your preferred Python environment:
+Install the server from GitHub:
 
 ```bash
-pip install .
+python -m pip install "git+https://github.com/rahulsharmaah/local-db-mcp.git"
 ```
 
 Create your user config:
@@ -34,6 +34,13 @@ Edit `~/.local-db-mcp/config.yaml` with your database connection strings. Then c
 ```text
 local-db-mcp
 ```
+
+This repo includes install-ready client assets:
+
+- `.mcp.json` for standard MCP clients
+- `.cursor/mcp.json` for Cursor
+- `.codex-plugin/plugin.json` for Codex local plugin installs
+- `docs/codex-cloud.md` for Codex Cloud workspaces
 
 If you prefer the one-command bootstrap scripts, run:
 
@@ -112,8 +119,10 @@ databases:
 See:
 
 - [Codex](docs/codex.md)
+- [Codex Cloud](docs/codex-cloud.md)
 - [Claude Desktop](docs/claude-desktop.md)
 - [Cursor](docs/cursor.md)
+- [Client Templates](docs/client-templates.md)
 - [Contributing](CONTRIBUTING.md)
 - [Security](SECURITY.md)
 

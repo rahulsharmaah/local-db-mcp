@@ -1,7 +1,12 @@
 {
   "name": "local-db-mcp",
   "version": "0.1.0",
-  "description": "MCP server for read-only local SQL and NoSQL database inspection.",
+  "displayName": "Local DB MCP",
+  "description": "Read-only MCP access to configured SQL and NoSQL databases for Codex, Cursor, Claude, and other MCP clients.",
+  "author": "Rahul Sharma",
+  "homepage": "https://rahulsharmaah.github.io/local-db-mcp/",
+  "repository": "https://github.com/rahulsharmaah/local-db-mcp",
+  "license": "MIT",
   "mcpServers": {
     "local-db": {
       "command": "local-db-mcp",
@@ -10,5 +15,8 @@
         "LOCAL_DB_MCP_CONFIG": "${home}/.local-db-mcp/config.yaml"
       }
     }
-  }
+  },
+  "skills": [
+    "skills/local-db-mcp/SKILL.md"
+  ]
 }

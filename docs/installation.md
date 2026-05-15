@@ -11,6 +11,18 @@ title: Installation
 - A local database you can connect to
 - An MCP-compatible client such as Codex, Claude Desktop, or Cursor
 
+## Install From GitHub
+
+```bash
+python -m pip install "git+https://github.com/rahulsharmaah/local-db-mcp.git"
+```
+
+The install exposes this command:
+
+```bash
+local-db-mcp
+```
+
 ## Install From Source
 
 ```bash

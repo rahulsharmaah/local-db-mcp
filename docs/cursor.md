@@ -1,20 +1,22 @@
 # Cursor Setup
 
-Install Local DB MCP:
+Cursor supports MCP server configuration through a project or user MCP config. This repository includes a ready-to-copy template at `.cursor/mcp.json`.
+
+## Install the Server
 
 ```bash
-pip install .
+python -m pip install "git+https://github.com/rahulsharmaah/local-db-mcp.git"
 ```
 
 Create `~/.local-db-mcp/config.yaml` from `examples/config.example.yaml`.
 
-This repo includes a Cursor MCP template at:
+## Use the Cursor Template
 
 ```text
 .cursor/mcp.json
 ```
 
-If your project uses a different path, copy this block into Cursor's MCP config:
+If your Cursor setup uses a user-level MCP configuration instead, copy this server definition:
 
 ```json
 {
@@ -30,4 +32,4 @@ If your project uses a different path, copy this block into Cursor's MCP config:
 }
 ```
 
-Restart Cursor after changing MCP configuration.
+Restart Cursor after changing MCP configuration. Then ask Cursor to run `health_check` and `list_connections` before issuing database-specific queries.

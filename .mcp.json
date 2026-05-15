@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "local-db": {
+      "command": "local-db-mcp",
+      "args": [],
+      "env": {
+        "LOCAL_DB_MCP_CONFIG": "~/.local-db-mcp/config.yaml"
+      }
+    }
+  }
+}

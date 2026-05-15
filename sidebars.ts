@@ -9,7 +9,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Client Setup',
-      items: ['codex', 'claude-desktop', 'cursor'],
+      items: ['codex', 'codex-cloud', 'cursor', 'claude-desktop', 'client-templates'],
     },
     'examples',
     'contributing',
