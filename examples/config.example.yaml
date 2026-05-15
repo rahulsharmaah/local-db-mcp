@@ -1,0 +1,43 @@
+default_limit: 100
+allow_write_tools: false
+
+databases:
+  - name: local_postgres
+    kind: postgres
+    description: Local PostgreSQL example
+    dsn: postgresql+psycopg://user:password@localhost:5432/database_name
+    read_only: true
+    max_rows: 200
+    tags: ["local", "sql"]
+
+  - name: local_mysql
+    kind: mysql
+    description: Local MySQL or MariaDB example
+    dsn: mysql+pymysql://user:password@localhost:3306/database_name
+    read_only: true
+    max_rows: 200
+    tags: ["local", "sql"]
+
+  - name: local_sqlite
+    kind: sqlite
+    description: Local SQLite example
+    dsn: sqlite:///C:/path/to/database.sqlite
+    read_only: true
+    max_rows: 200
+    tags: ["local", "file"]
+
+  - name: local_mongodb
+    kind: mongodb
+    description: Local MongoDB example; include database name in URI
+    dsn: mongodb://localhost:27017/database_name
+    read_only: true
+    max_rows: 100
+    tags: ["local", "nosql"]
+
+  - name: local_redis
+    kind: redis
+    description: Local Redis example
+    dsn: redis://localhost:6379/0
+    read_only: true
+    max_rows: 100
+    tags: ["local", "cache"]

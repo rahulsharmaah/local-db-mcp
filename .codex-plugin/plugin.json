@@ -1,0 +1,14 @@
+{
+  "name": "local-db-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for read-only local SQL and NoSQL database inspection.",
+  "mcpServers": {
+    "local-db": {
+      "command": "${pluginRoot}/.venv/Scripts/python.exe",
+      "args": ["-m", "local_db_mcp.server"],
+      "env": {
+        "LOCAL_DB_MCP_CONFIG": "${home}/.local-db-mcp/config.yaml"
+      }
+    }
+  }
+}
