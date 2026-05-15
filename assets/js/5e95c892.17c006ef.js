@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklocal_db_mcp_docs=self.webpackChunklocal_db_mcp_docs||[]).push([[647],{7121(e,c,s){s.r(c),s.d(c,{default:()=>n});s(6540);var r=s(4164),a=s(7559),l=s(5500),d=s(2831),u=s(1656),o=s(4848);function n(e){return(0,o.jsx)(l.e3,{className:(0,r.A)(a.G.wrapper.docsPages),children:(0,o.jsx)(u.A,{children:(0,d.v)(e.route.routes)})})}}}]);
