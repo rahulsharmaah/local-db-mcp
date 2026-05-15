@@ -5,7 +5,7 @@ databases:
   - name: local_postgres
     kind: postgres
     description: Local PostgreSQL example
-    dsn: postgresql+psycopg://user:password@localhost:5432/database_name
+    dsn: postgresql+psycopg://app_user:change-me@localhost:5432/database_name
     read_only: true
     max_rows: 200
     tags: ["local", "sql"]
@@ -13,7 +13,7 @@ databases:
   - name: local_mysql
     kind: mysql
     description: Local MySQL or MariaDB example
-    dsn: mysql+pymysql://user:password@localhost:3306/database_name
+    dsn: mysql+pymysql://app_user:change-me@localhost:3306/database_name
     read_only: true
     max_rows: 200
     tags: ["local", "sql"]
@@ -21,7 +21,7 @@ databases:
   - name: local_sqlite
     kind: sqlite
     description: Local SQLite example
-    dsn: sqlite:///C:/path/to/database.sqlite
+    dsn: sqlite:///relative-or-absolute-database.sqlite
     read_only: true
     max_rows: 200
     tags: ["local", "file"]

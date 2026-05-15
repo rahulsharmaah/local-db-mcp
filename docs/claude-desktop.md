@@ -1,19 +1,18 @@
 # Claude Desktop Setup
 
-Run setup first:
+Install Local DB MCP:
 
-```powershell
-cd D:\local-db-mcp
-.\scripts\setup.ps1
-notepad $HOME\.local-db-mcp\config.yaml
+```bash
+pip install .
 ```
 
-Add this to Claude Desktop's MCP config file.
+Create `~/.local-db-mcp/config.yaml` from `examples/config.example.yaml`, then add this to Claude Desktop's MCP config file.
 
-Windows path:
+Typical config file locations:
 
 ```text
-%APPDATA%\Claude\claude_desktop_config.json
+macOS: ~/Library/Application Support/Claude/claude_desktop_config.json
+Windows: %APPDATA%\Claude\claude_desktop_config.json
 ```
 
 Config:
@@ -22,10 +21,10 @@ Config:
 {
   "mcpServers": {
     "local-db": {
-      "command": "D:/local-db-mcp/.venv/Scripts/python.exe",
-      "args": ["-m", "local_db_mcp.server"],
+      "command": "local-db-mcp",
+      "args": [],
       "env": {
-        "LOCAL_DB_MCP_CONFIG": "C:/Users/user/.local-db-mcp/config.yaml"
+        "LOCAL_DB_MCP_CONFIG": "~/.local-db-mcp/config.yaml"
       }
     }
   }

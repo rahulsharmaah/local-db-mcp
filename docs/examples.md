@@ -22,8 +22,8 @@ PostgreSQL:
 {
   "tool": "query_sql_readonly",
   "arguments": {
-    "connection": "bimble_admin",
-    "sql": "SELECT clinic_id, clinic_code, slug, status FROM clinics ORDER BY clinic_id",
+    "connection": "app_postgres",
+    "sql": "SELECT id, status, created_at FROM accounts ORDER BY id",
     "limit": 50
   }
 }
@@ -35,8 +35,8 @@ MySQL / MariaDB:
 {
   "tool": "query_sql_readonly",
   "arguments": {
-    "connection": "oscar",
-    "sql": "SELECT clinic_no, clinic_name FROM clinic LIMIT 20"
+    "connection": "app_mysql",
+    "sql": "SELECT id, name, status FROM customers LIMIT 20"
   }
 }
 ```

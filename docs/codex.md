@@ -1,23 +1,21 @@
 # Codex Setup
 
-Run setup first:
+Install Local DB MCP:
 
-```powershell
-cd D:\local-db-mcp
-.\scripts\setup.ps1
-notepad $HOME\.local-db-mcp\config.yaml
+```bash
+pip install .
 ```
 
-Then add the MCP server to your Codex MCP configuration:
+Create `~/.local-db-mcp/config.yaml` from `examples/config.example.yaml`, then add the MCP server to your Codex MCP configuration:
 
 ```json
 {
   "mcpServers": {
     "local-db": {
-      "command": "D:/local-db-mcp/.venv/Scripts/python.exe",
-      "args": ["-m", "local_db_mcp.server"],
+      "command": "local-db-mcp",
+      "args": [],
       "env": {
-        "LOCAL_DB_MCP_CONFIG": "C:/Users/user/.local-db-mcp/config.yaml"
+        "LOCAL_DB_MCP_CONFIG": "~/.local-db-mcp/config.yaml"
       }
     }
   }
