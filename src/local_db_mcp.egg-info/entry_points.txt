@@ -1,2 +1,0 @@
-[console_scripts]
-local-db-mcp = local_db_mcp.server:main
