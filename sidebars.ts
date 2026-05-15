@@ -14,6 +14,8 @@ const sidebars: SidebarsConfig = {
     'examples',
     'contributing',
     'security',
+    'privacy',
+    'terms',
   ],
 };
 

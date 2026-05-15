@@ -1,22 +1,48 @@
 {
   "name": "local-db-mcp",
   "version": "0.1.0",
-  "displayName": "Local DB MCP",
-  "description": "Read-only MCP access to configured SQL and NoSQL databases for Codex, Cursor, Claude, and other MCP clients.",
-  "author": "Rahul Sharma",
+  "description": "Local MCP server for read-only SQL and NoSQL database inspection.",
+  "author": {
+    "name": "Rahul Sharma",
+    "email": "rahulsharmaah@users.noreply.github.com",
+    "url": "https://github.com/rahulsharmaah"
+  },
   "homepage": "https://rahulsharmaah.github.io/local-db-mcp/",
   "repository": "https://github.com/rahulsharmaah/local-db-mcp",
   "license": "MIT",
-  "mcpServers": {
-    "local-db": {
-      "command": "local-db-mcp",
-      "args": [],
-      "env": {
-        "LOCAL_DB_MCP_CONFIG": "${home}/.local-db-mcp/config.yaml"
-      }
-    }
-  },
-  "skills": [
-    "skills/local-db-mcp/SKILL.md"
-  ]
+  "keywords": [
+    "database",
+    "mcp",
+    "postgresql",
+    "mysql",
+    "mongodb",
+    "redis",
+    "sqlite",
+    "developer-tools"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Local DB MCP",
+    "shortDescription": "Connect Codex to local SQL and NoSQL databases.",
+    "longDescription": "A local MCP plugin for safe, read-only inspection of configured PostgreSQL, MySQL/MariaDB, SQLite, MongoDB, and Redis databases.",
+    "developerName": "Rahul Sharma",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Database",
+      "MCP"
+    ],
+    "websiteURL": "https://rahulsharmaah.github.io/local-db-mcp/",
+    "privacyPolicyURL": "https://rahulsharmaah.github.io/local-db-mcp/privacy",
+    "termsOfServiceURL": "https://rahulsharmaah.github.io/local-db-mcp/terms",
+    "composerIcon": "./assets/local-db-mcp-logo.svg",
+    "logo": "./assets/local-db-mcp-logo.svg",
+    "defaultPrompt": [
+      "Check Local DB MCP health.",
+      "List configured database connections.",
+      "Run a read-only SQL query."
+    ],
+    "brandColor": "#245F73"
+  }
 }
